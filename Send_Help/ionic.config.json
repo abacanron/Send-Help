@@ -1,0 +1,10 @@
+{
+  "name": "send-help",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}

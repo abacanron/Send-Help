@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon name="call-outline"></ion-icon>
+      SEND HELP
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">SEND HELP</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>We are here to help you. <br><br>Tell us what incident is happening and we will assist you.</strong>
+  </div>
+  <div id="reportbtn">
+    <ion-button color="danger" (click)="goToPage1()">Report</ion-button>
+  </div>
+</ion-content>

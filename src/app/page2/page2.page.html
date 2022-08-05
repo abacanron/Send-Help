@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Getting Help</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <strong>Even if you do not get examined right away, you can still get a checkup later. It is always best to see a doctor immediately after an incident.</strong>
+  </div>
+  <ion-card>
+    <ion-card-content>
+      <ion-icon name="male-female-outline"></ion-icon>
+      Is this person female or male?
+    </ion-card-content>
+    <ion-radio-group value="gender">
+      <ion-item>
+        <ion-label>Male</ion-label>
+        <ion-radio slot="start" value="male"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Female </ion-label>
+        <ion-radio slot="start" value="female"></ion-radio>
+      </ion-item>
+  
+    </ion-radio-group>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <ion-icon name="accessibility-outline"></ion-icon>
+      Does the victim have any disability?   
+     </ion-card-content>
+    <ion-radio-group value="disability">
+      <ion-item>
+        <ion-label>Yes</ion-label>
+        <ion-radio slot="start" value="yes"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>No</ion-label>
+        <ion-radio slot="start" value="no"></ion-radio>
+      </ion-item>
+  
+    </ion-radio-group>
+  </ion-card>
+  <ion-card>
+    <ion-icon name="calendar-outline"></ion-icon>
+    <ion-input placeholder="How old is he/she?"></ion-input>
+  </ion-card>
+  <ion-card>
+    <ion-icon name="location-outline"></ion-icon>
+    <ion-input placeholder="Input location"></ion-input>
+  </ion-card>
+  <ion-card>
+    <ion-list>
+      <ion-item>
+        <ion-select placeholder="Select emergency hotline" [(ngModel)]="hotline">
+          <ion-select-option value="09567935312">POLICE</ion-select-option>
+          <ion-select-option value="09615262377">HOSPITAL</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    
+  </ion-card>
+  <div id="reportbtn">
+    <ion-button color="medium" (click)="emergencycall()">CALL</ion-button>
+  </div>
+</ion-content>

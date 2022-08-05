@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" ></ion-back-button>
+    </ion-buttons>
+    <p>Getting Help</p>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <strong>Report the incident now. Please select whether or not the incident applies to you.</strong>
+  </div>
+  <ion-card>
+    <ion-card-content>
+      Did the incident happen to you?
+    </ion-card-content>
+
+    <ion-radio-group value="incident">
+      <ion-item>
+        <ion-label>Yes,it was me.</ion-label>
+        <ion-radio slot="start" value="yes"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>No, to somebody I know </ion-label>
+        <ion-radio slot="start" value="no"></ion-radio>
+      </ion-item>
+  
+    </ion-radio-group>
+  
+    
+  </ion-card>
+  <div id="reportbtn">
+    <ion-button color="medium" (click)="goToPage2()">NEXT</ion-button>
+  </div>
+</ion-content>
